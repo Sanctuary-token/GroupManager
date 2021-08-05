@@ -4,6 +4,11 @@ import sys
 
 import telegram.ext as tg
 
+from dotenv import load_dotenv
+
+if os.path.exists(".env"):
+    load_dotenv(".env")
+    
 # enable logging
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
